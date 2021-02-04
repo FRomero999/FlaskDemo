@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Saludos a
+        {% for p in gente %}
+        {{ p['nombre'] }}
+        {% endfor %}
+    </title>
+</head>
+
+<body>
+    <h1>Saludos para:</h1>
+
+    {% for p in gente %}
+    <h2>({{ p['id'] }}) {{ p['nombre'] }} {{ p['apellidos'] }} <small>desde {{ p['curso'] }}</small></h2><hr>
+    {% endfor %}
+
+</body>
+
+</html>

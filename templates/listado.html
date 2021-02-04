@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Listado</title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Edad</th>
+                <th>Curso</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for p in gente %}
+            <tr>
+                <td>{{p['id']}}</td>
+                <td>{{p['nombre']}}</td>
+                <td>{{p['apellidos']}}</td>
+                <td>{{p['edad']}}</td>
+                <td>{{p['curso']}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+
+</html>
